@@ -29,6 +29,7 @@ h2{
 .menu-icon{
     width: 40px;
     text-align: center;
+    cursor: pointer;
 }
 header .flex-container{
     display: flex;
@@ -36,9 +37,70 @@ header .flex-container{
 }
 .container{
     padding: 1rem;
+    position: relative;
 
 }
 
+header a svg{
+    width: 15px;
+    height: 15px;
+}
+.main-menu li{
+    line-height: 85px;
+    margin: 0 25px;
+    border-bottom: 1px solid #e3eaf4;
+    white-space: nowrap;
+}
+.main-menu li:last-of-type{
+    border-bottom: none;
+}
+.main-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f89d70;
+    font-weight: 700;
+    padding-left: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.main-menu a:hover,
+.main-menu a:active{
+    background-color: #e3eaf3;
+    border-radius: 5px;
+    display: block;
+}
+.main-menu svg:last-of-type{
+    margin-left: auto;
+}
+.main-menu svg:first-of-type{
+    margin-right: 10px;
+}
+
+.dropdown-menu a{
+    color: #00263e;
+    font-weight: 400;
+    text-transform: none;
+}
+.dropdown-menu{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.main-menu li:hover>.dropdown-menu{
+    max-height: 100vh;
+}
+nav{
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    width: 100vh;
+    transition: all 0.4s ease-in-out;
+}
+.show-nav{
+    max-height: 100vh;
+}
 @media only screen and (min-width:1300px){
     .container{
         padding: 1rem 0;
@@ -46,3 +108,8 @@ header .flex-container{
         margin: 0 auto;
     }
 }
+
+/* TODO BEFORE HAND IN
+
+finish wide screen
+Upload with URL in netlify*/
