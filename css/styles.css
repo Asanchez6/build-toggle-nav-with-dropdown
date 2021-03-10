@@ -107,6 +107,16 @@ nav{
         max-width: 80rem;
         margin: 0 auto;
     }
+    .wideflex{
+        display: flex;
+    }
+    header a svg{
+        display: hidden;
+    }
+    nav{
+        position: absolute;
+    }
+    
 }
 
 /* TODO BEFORE HAND IN
