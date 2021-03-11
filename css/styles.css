@@ -107,14 +107,15 @@ nav{
         max-width: 80rem;
         margin: 0 auto;
     }
-    .wideflex{
+    .main-menu{
         display: flex;
+        justify-content: flex-end;
     }
     header a svg{
         display: hidden;
     }
     nav{
-        position: absolute;
+        position: relative;
     }
     
 }
